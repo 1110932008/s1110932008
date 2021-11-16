@@ -1,0 +1,132 @@
+/*排版*/
+header{height:70px ; background-color:sandybrown;margin:0}
+body{background-color:gainsboro;margin: 0px;}
+article{margin:0px auto; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;}
+footer{height: auto;background-color:orange;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+#aside_left{width: 350px;height: 600px;float:left}
+#aside_right{width: 200px;height: 600px;float:right}
+#aside_ground{height: 100px;}
+
+/*footer按鈕*/
+.button_footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display:inline-block;
+    width: 200px;
+    height:30px;
+    margin: 3px;
+    color:white;
+    background-color: orange;
+    border: none;
+}
+.button_footer:hover{
+    color:orange;
+    background-color:black;
+    cursor: pointer;
+  }
+  .button_footer:active{
+    box-shadow: 0px 2px;
+    -ms-transform: translate(0,2px);
+    -webkit-transform: translate(0,2px);
+    transform: translate(0,2px);
+  }
+
+
+nav{height:20px; background-color:black; margin:0}
+
+a{color: black;}
+a:hover{color:blue;}
+#img_product {border-radius: 10px;width: 200px;}
+
+/*產品按鈕*/
+.button2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  display:inline-block;
+  width: 200px;
+  height:30px;
+  margin: 3px;
+  background-color: gray;
+  color:white;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: 1s;
+  -ms-transition: 1s;
+  transition: 1s;  
+}
+.button2:hover{
+height: 50px;
+color:orange;
+background-color:black;
+cursor: pointer;
+}
+.button2:active{
+box-shadow: 0px 4px gray;
+-ms-transform: translate(0,4px);
+-webkit-transform: translate(0,4px);
+transform: translate(0,4px);
+}
+  
+/*選單*/
+ul{margin:0;padding:0;list-style-type: none;}
+.menu{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;}
+.menu>li{float: left;}/*子選擇器，只有第一層*/
+.menu li{position: relative;padding: 0px;border: lightblue 1px dashed;min-width: 120px;}
+.menu ul{position: absolute;z-index: 10;top: 100%;display: none;}
+.menu ul li>ul {/*定義上一層ul li 與下一層ul的距離，第三層以後*/ z-index: 20;top: 5%;left: 95%;}
+.menu a{display: block;padding: 10px;text-decoration: none;background-image: url(img/button_1.png);background-size: cover;color: black;}
+.menu :hover{background-image: url(img/button_2.png);background-size: cover;color: lightsteelblue;}
+.menu li:hover>ul{display: block;}
+
+
+/*圖片播放*/
+.img{
+  width: 200px;
+  }
+  .img1{
+    width: 400px;
+    }
+.dot {
+  width: 9px;
+  height: 9px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: solid black 1px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: lightgrey;
+  }
+.dot:hover {
+  background-color: orange;
+  }
+
+  #dailycss_20200803-2 {
+    background-color: #003444;
+    margin: 0;
+    padding: 0;
+}
+
+/*inquiry now按鈕*/
+.button_inquiry{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  display:inline-block;
+  width: 200px;
+  height:40px;
+  margin: 3px;
+  color:white;
+  background-color: orangered;
+  border: none;
+  border-radius: 10px;
+}
+.button_inquiry:hover{
+  color:orange;
+  background-color:black;
+  cursor: pointer;
+}
+.button_inquiry:active{
+  box-shadow: 0px 2px;
+  -ms-transform: translate(0,2px);
+  -webkit-transform: translate(0,2px);
+  transform: translate(0,2px);
+}
